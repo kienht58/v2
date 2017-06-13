@@ -1,0 +1,30 @@
+{
+  "name": "v2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "fs": "0.0.1-security",
+    "isomorphic-fetch": "^2.2.1",
+    "memdown": "^1.2.4",
+    "pouchdb": "^6.2.0",
+    "pouchdb-adapter-http": "^6.2.0",
+    "pouchdb-adapter-idb": "^6.2.0",
+    "pouchdb-adapter-websql": "^6.2.0",
+    "pouchdb-core": "^6.2.0",
+    "pouchdb-load": "^1.4.6",
+    "pouchdb-replication-stream": "^1.2.9",
+    "pouchdb-upsert": "^2.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
