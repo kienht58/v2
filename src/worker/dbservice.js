@@ -75,6 +75,13 @@ async function doLocalFirst(dbFunc, db) {
 
 function findBook(query) {
     var books = require('../data/books')
+    var res = await db.query('by-name', {
+        startkey: filter.toLowerCase(),
+        endkey: filter.toLowerCase() + '\ufff0',
+        include_docs: true
+    })
+
+    return res.rows.map(row => row.doc)
 }
 
 module.exports = {
